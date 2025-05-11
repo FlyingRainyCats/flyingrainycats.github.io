@@ -1,0 +1,7 @@
+{{- $options := dict
+    "targetPath" "_custom.css"
+    "transpiler" "dartsass"
+-}}
+{{- $s := resources.Get "sass/custom.scss" | toCSS $options | minify |
+fingerprint -}}
+<link href="{{ $s.RelPermalink }}" rel="stylesheet" />

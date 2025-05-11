@@ -1,0 +1,36 @@
+[not_found]
+other = "NOT FOUND"
+
+[not_found_desc]
+other = "遇到了不存在的世界..."
+
+[home]
+other = "主页"
+
+[published]
+other = "发布时间"
+
+[reading_time]
+other = "阅读时长"
+
+[reading_time_desc]
+one = "1 分钟"
+other = "{{ .Count }} 分钟"
+
+[authors]
+other = "作者"
+
+[tags]
+other = "标签"
+
+[categories]
+other = "分类"
+
+[and]
+other = "与"
+
+[powered_by]
+other = "使用"
+
+[theme]
+other = "主题"

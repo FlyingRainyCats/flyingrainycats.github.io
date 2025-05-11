@@ -1,0 +1,43 @@
+baseURL = 'https://flyingrainycats.github.io/'
+defaultContentLanguage = "zh-hans-cn"
+hasCJKLanguage = true
+languageCode = 'zh-Hans-CN'
+theme = "nightfall"
+title = '爱飞的猫'
+
+[menu]
+[[menu.header]]
+name = "文章"
+url = "/posts"
+weight = 0
+
+[params]
+color = "orange"
+footerHtml = '© 爱飞的猫，使用 <a target="_blank" rel="noopener nofollow noreferrer" href="https://gohugo.io" class="footerLink">Hugo</a> 与 <a target="_blank" rel="noopener nofollow noreferrer" href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">夜幕</a> 主题。除非特别注明，使用 <a target="_blank" rel="license noopener nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans">CC BY-NC 4.0 <i class="icon icon-license"></i></a> 协议发布。'
+readingTime = false
+sitedescription = '「爱飞的猫」博客，逆向与编程。'
+
+hostname = "爱飞的猫"
+user = "root"
+
+[params.author]
+avatar = "/avatar.webp"
+avatarFirst = false
+avatarSize = "size-m"
+email = "flying.raining.cat@proton.me"
+name = "爱飞的猫"
+
+[[params.social]]
+aria = "GitHub Profile"
+icon = "icon icon-github"
+key = 0
+name = "github"
+target = "_blank"
+url = "https://github.com/flyingrainycats"
+
+[[params.social]]
+aria = "52pojie 地址"
+icon = "icon icon-52pojie"
+name = "52pojie"
+target = "_blank"
+url = "https://github.com/flyingrainycats"
