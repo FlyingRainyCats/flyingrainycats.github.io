@@ -389,3 +389,9 @@ end;
 ⇒ [github.com/FlyingRainyCats/age_unpack](https://github.com/FlyingRainyCats/age_unpack)
 
 ※ 上述解包项目使用 [MIT 授权协议](https://github.com/FlyingRainyCats/age_unpack/blob/main/LICENSE)。
+
+## 其它
+
+本文也发表至以下位置：
+
+- [解包《雅致 Flash打包器 (AGE Flash Packer)》生成的可执行文件 - 吾爱破解](https://www.52pojie.cn/thread-2030676-1-1.html)
