@@ -1,6 +1,5 @@
 +++
-date = '2025-05-11T10:39:02+09:00'
-draft = true
+date = '2025-05-11T09:39:02+09:00'
 title = '解包 AGE Flash Packer 生成的可执行文件'
 description = '透过逆向分析 AGE Flash Packer 生成的可执行文件，最终编写一个资源提取工具。'
 summary = '逆向分析 AGE Flash Packer 生成的文件并提取资源。'
