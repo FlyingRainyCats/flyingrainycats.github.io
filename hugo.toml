@@ -5,6 +5,10 @@ languageCode = 'zh-Hans-CN'
 theme = "nightfall"
 title = '爱飞的猫'
 
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
+
 [menu]
 [[menu.header]]
 name = "文章"
@@ -36,8 +40,8 @@ target = "_blank"
 url = "https://github.com/flyingrainycats"
 
 [[params.social]]
-aria = "52pojie 地址"
+aria = "吾爱破解"
 icon = "icon icon-52pojie"
 name = "52pojie"
 target = "_blank"
-url = "https://github.com/flyingrainycats"
+url = "https://www.52pojie.cn/?176017"
