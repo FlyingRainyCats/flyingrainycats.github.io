@@ -1,6 +1,6 @@
 +++
 date = '2025-05-11T09:39:02+09:00'
-lastmod = '2025-05-11T22:29:02+09:00'
+lastmod = '2025-05-13T00:00:00+09:00'
 title = '解包 AGE Flash Packer 生成的可执行文件'
 description = '透过逆向分析 AGE Flash Packer 生成的可执行文件，最终编写一个资源提取工具。'
 summary = '逆向分析 AGE Flash Packer 生成的文件并提取资源。'
@@ -333,12 +333,17 @@ end;
 
 因此如果需要使用其它语言实现，那么需要利用 `ECB` 模式，来手动实现 DCPcrypt 版的 `CFB` 模式。
 
-> DCPcrypt 的 IV 生成部分也是非标行为。
->
-> 有兴趣的同学可以自行尝试逆向（或[瞄一眼我的实现][dcp_iv_init]），这里就不展开了。
+![DCPcrypt 的 CFB 模式实现流程图](./assets/DCPcrypt_CFB-dark@2x.webp "DCPcrypt 的 CFB 模式实现流程")
 
 [DCPcrypt]: https://wiki.lazarus.freepascal.org/DCPcrypt
-[dcp_iv_init]: https://github.com/FlyingRainyCats/age_unpack/blob/8fb72d1/age/cipher.py#L14
+
+此外，DCPcrypt 的 IV 生成部分也是非标行为。它的 IV 参数是可选的，因此在未提供的情况下，会使用空白数据进行 ECB 加密一次。
+
+大概如下：
+
+```py
+iv = blowfish_ecb_encrypt(b'\x00' * 8, key)
+```
 
 ## 解密流程
 
