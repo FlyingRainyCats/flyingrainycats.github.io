@@ -2,5 +2,8 @@
   "editor.formatOnSave": true,
   "[html]": {
     "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   }
 }

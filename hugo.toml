@@ -45,3 +45,15 @@ icon = "icon icon-52pojie"
 name = "52pojie"
 target = "_blank"
 url = "https://www.52pojie.cn/?176017"
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.extensions.cjk]
+eastAsianLineBreaks = true
+eastAsianLineBreaksStyle = 'css3draft'
+enable = true
+escapedSpace = true

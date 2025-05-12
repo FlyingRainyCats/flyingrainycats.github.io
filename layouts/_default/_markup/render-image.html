@@ -1,0 +1,23 @@
+{{- if .IsBlock -}}
+  <figure>
+    <img
+        {{ if (strings.Contains .Destination "@2x") -}}
+         srcset="{{ .Destination | safeURL }} 2x"
+        {{- else -}}
+         src="{{ .Destination | safeURL }}"
+        {{- end -}}
+      {{- with .PlainText }} alt="{{ . }}"{{ end -}}
+    >
+    {{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end -}}
+  </figure>
+{{- else -}}
+  <img 
+    {{ if (strings.Contains .Destination "@2x") -}}
+        srcset="{{ .Destination | safeURL }} 2x"
+    {{- else -}}
+        src="{{ .Destination | safeURL }}"
+    {{- end -}}
+    {{- with .PlainText }} alt="{{ . }}"{{ end -}}
+    {{- with .Title }} title="{{ . }}"{{ end -}}
+  >
+{{- end -}}
